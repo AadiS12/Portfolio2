@@ -1,13 +1,10 @@
----
----
-// Base URL helper:
-// - On GitHub Pages: "/Portfolio2"
-// - On localhost: "" (so "/assets/..." works locally)
+
 const firstFolder = window.location.pathname.split("/")[1]; // "Portfolio2"
 export const baseurl =
   (location.hostname === "localhost" || location.hostname === "127.0.0.1")
     ? ""
     : (firstFolder ? `/${firstFolder}` : "");
+
 
 
 export var pythonURI;
